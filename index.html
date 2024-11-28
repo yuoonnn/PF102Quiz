@@ -1,0 +1,72 @@
+<html>
+<head>
+    <title>Phonebook - Contact Management</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div id="container">
+        <h3>PHONEBOOK - ADD CONTACT</h3>
+        <p><I>Please fill in the contact details and click save.</I></p>
+        <div id="message"></div>
+        <form name='form1' enctype="multipart/form-data">
+            <table align="">
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>First Name:</label>&nbsp;
+                    </td>
+                    <td>
+                        <input type='text' placeholder='First Name' name='first_name' id='first_name' required><br />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Last Name:</label>&nbsp;
+                    </td>
+                    <td>
+                        <input type='text' placeholder='Last Name' name='last_name' id='last_name' required><br />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Phone Number:</label>&nbsp;
+                    </td>
+                    <td>
+                        <input type='tel' name='phone' placeholder='Phone Number' id='phone' required><br />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Email:</label>&nbsp;
+                    </td>
+                    <td>
+                        <input type='email' name='email' placeholder='Email' id='email' required><br />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Contact Photo:</label>&nbsp;
+                    </td>
+                    <td>
+                        <input type='file' name='photo' id='photo' accept="image/*"><br />
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>
+                        <input class='btn' type="button" id="saveusers" value="Save Contact" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <p>
+            <a href="index.php" class="btn">View Contacts</a>
+        </p>
+    </div>
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="contacts.js"></script>
+</body>
+</html>
